@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" href="battery.png">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+
+
+
+    <center>
+        <div class="contact">
+            <h1>Create an account</h1>
+            <form method="POST" action="">
+                <label for="fname">FirstName</label>
+                <input type="text" id="fname" name="firstName" placeholder="Enter your name">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email">
+                <label for="subject">Password</label>
+                <input type="text" id="Password" name="Password" placeholder="Password">
+                <br>
+                <input type="button" name="button" class="reg" onclick="fn()" value="Register"></input>
+            </form>
+        </div>
+    </center>
+
+    <body>
+
+
+
+        <script>
+            function fn() {
+                var name = document.getElementById('fname').value;
+                var email = document.getElementById('email').value;
+                var pass = document.getElementById('Password').value;
+                if (name.length == 0) {
+                    alert('name is required');
+                } else if (email.length == 0) {
+                    alert('email is required');
+                } else if (pass.length == 0) {
+                    alert('password is required');
+
+                } else {
+                    window.location = "index2.html"
+                }
+            }
+        </script>
+    </body>
+
+
+
+</html>
